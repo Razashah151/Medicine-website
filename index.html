@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Website</title>
+    <link rel="stylesheet" href="./web1.css">
+    <script src="https://kit.fontawesome.com/d76236df91.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    function toggleNavbar() {
+        var navbar = document.getElementsByClassName("navbar")[0];
+        var barsIcon = document.getElementsByClassName("fa-bars")[0];
+        var markIcon = document.getElementsByClassName("fa-xmark")[0];
+
+        if (navbar.style.display === "block") {
+            navbar.style.display = "none";
+            barsIcon.style.display = "block";
+            markIcon.style.display = "none";
+        } else {
+            navbar.style.display = "block";
+            barsIcon.style.display = "none";
+            markIcon.style.display = "block";
+        }
+    }
+</script>
+
+
+<body>
+
+    <div class="main">
+        <span class="logoname">
+            <img src="./logo.png" alt="logo">
+            <b>CureM4</b>
+        </span>
+        <div class="sidebar" onclick="toggleNavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <ul class="navbar">
+
+            <li><a href="./">Home</a></li>
+            <li><a href="./">Shop</a></li>
+            <li><a href="./">Products</a></li>
+            <li><a href="./">About</a></li>
+            <li><a href="./">Contact</a></li>
+            <h4>Need help? 989-879-0847</h4>
+        </ul>
+
+    </div>
+    <div class="hero-section">
+        <div class="left-side stacked1">
+            <img src="./product2.jpg" alt="">
+            <div class="content">
+                <h1> <b> Antibacterial <br>
+                        Sanitizer Shop</b></h1>
+                <h2>The easiest way to protect yourself</h2>
+                <div class="content1">
+                    <h4><i class="fa-solid fa-shield-halved"></i>Antibacterial</h4>
+                    <h4><i class="fa-solid fa-globe"></i>Anti-virus</h4>
+                </div>
+                <div class="btn1">
+                    <button class="btn">Shop Now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-section2">
+        <div class="gridview">
+            <div class="first stacked">
+                <img src="./card2.jpg" alt="">
+                <div class="first-content">
+                    <p class="new">NEW</p>
+                    <p class="first-box">Hand <br>
+                        Sanitizer</p>
+                    <div id="btn2">
+                        <button>More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="first stacked">
+                <img src="./mbr-1.jpeg" alt="">
+                <div class="first-content">
+                    <p class="second-box">Medical <br> Sanitizer</p>
+                    <p class="last-price">-30%</p>
+                    <div id="btn2">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="first stacked">
+                <img src="./mbr-2.jpeg" alt="">
+                <div class="first-content">
+                    <p class="third-box">Hand <br>
+                        Antiseptic</p>
+                    <p class="last-price">$15.99</p>
+                    <div id="btn2">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+            <div class="hero-section3">
+                <h1>Latest Reviews</h1>
+                <div class="gridview3">
+                    <div class="third">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Nihil deleniti neque id?</p>
+                   <h3 class="name">John Smith</h3>
+                   </div>
+                   <div class="third">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Provident ad culpa odit?</p>
+                <h3 class="name">John Smith</h3>
+                </div>
+                </div>
+                <form action="./">
+                    <h1 class="heading1">Fill up the form if you have any question</h1>
+                    <div class="form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" name="" id=""placeholder="Email">
+                    <input type="number"placeholder="Phone">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class="btn3">Send Message</button>
+                </div>
+                </form>
+               
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="gridview2">
+                <div class="second">
+                    <h3>Information</h3>
+                    <p>About us <br>
+                        Delivery <br>
+                        Privacy Policy <br>
+                        Sales <br>
+                        Conditions</p>
+                </div>
+                <div class="second">
+                    <h3>Account</h3>
+                    <p>My Account <br>
+                        My Orders <br>
+                        Returns <br>
+                        Shipping <br>
+                        Wishlist</p>
+                </div>
+                <div class="second">
+                    <h3>Store</h3>
+                    <p>Affiliate <br>
+                        Best Sellers <br>
+                        Discount <br>
+                        Latest Products <br>
+                        Sale</p>
+                </div>
+                <div class="second">
+                    <h3>Need help</h3>
+                    <h2>989-879-0847</h2>
+                    <p>Monday – Friday: 9:00-20:00 <br>
+                        Saturday: 11:00 – 15:00</p>
+                    <button class="btn2">Contact@yoursite.com</button>
+                </div>
+                <div class="second">
+                    <h3>Our Store</h3>
+                    <p>Orlando 1307 Terry <br>
+                        Lane 45</p>
+                    <a href="./">Show on Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
